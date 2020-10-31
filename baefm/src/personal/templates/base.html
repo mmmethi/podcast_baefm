@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Megapod Template">
+    <meta name="keywords" content="Megapod, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BAE FM</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static  'personal/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static  'personal/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static  'personal/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static  'personal/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static  'personal/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static  'personal/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static  'personal/css/style.css' %}" type="text/css">
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="OXVyoRTl"></script>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__search">
+            <form action="#">
+                <input type="text" placeholder="Search and hit enter...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="{% url 'index' %}"><img src="{% static  'personal/img/logo2.png' %}" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="header__logo">
+                        <a href="{% url 'index' %}"><img src="{% static  'personal/img/logo2.png' %}" alt=""></a>
+                    </div>
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./episodes.html">Podcasts</a></li>
+                            <li><a href="./blog.html">Blog</a>
+                                <ul class="dropdown">
+                                    <li><a href="./blog.html">Blog</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <div class="header__right">
+                        <div class="header__right__search">
+                            <form action="#">
+                                <input type="text" placeholder="Search and hit enter...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="header__right__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+{% block content %}
+
+
+{% endblock %}
+
+
+ <!-- Footer Section Begin -->
+                        <footer class="footer set-bg" data-setbg="{% static  'personal/img/footer-bg.jpg' %}">
+                            <div class="container">
+                                <div class="footer__subscriber">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="footer__subscriber__text">
+                                                <h3>Sign up for our newsletter!</h3>
+                                                <p>Subscribe to receive info on our latest news and episodes</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 offset-lg-2">
+                                            <form action="#" class="footer__subscriber__form">
+                                                <input type="text" placeholder="Your email address">
+                                                <button type="submit" class="site-btn">Subscribe</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-9">
+                                        <div class="footer__widget">
+                                            <div class="footer__logo">
+                                                <a href="#"><img src="{% static  'personal/img/logo.png' %}" alt=""></a>
+                                            </div>
+                                            <p class="footer__copyright__text">Copyright ©<script>
+                                                document.write(new Date().getFullYear());
+                                            </script> BAE fm - All rights reserved | Made by lazaCode101 <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="footer__social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- Footer Section End -->
+
+                    <!-- Js Plugins -->
+                    <script src="{% static  'personal/js/jquery-3.3.1.min.js' %}"></script>
+                    <script src="{% static  'personal/js/bootstrap.min.js' %}"></script>
+                    <script src="{% static  'personal/js/jquery.magnific-popup.min.js' %}"></script>
+                    <script src="{% static  'personal/js/mixitup.min.js' %}"></script>
+                    <script src="{% static  'personal/js/jquery.slicknav.js' %}"></script>
+                    <script src="{% static  'personal/js/owl.carousel.min.js' %}"></script>
+                    <script src="{% static  'personal/js/main.js' %}"></script>
+
+                    <!-- Music Plugin -->
+                    <script src="{% static  'personal/js/jquery.jplayer.min.js' %}"></script>
+                    <script src="{% static  'personal/js/jplayerInit.js' %}"></script>
+                </body>
+
+                </html>

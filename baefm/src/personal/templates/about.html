@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option normal-breadcrumb spad set-bg" data-setbg="{% static 'personal/img/breadcrumb-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h2>About</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index' %}"><i class="fa fa-home"></i> Home</a>
+                            <span>About</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="about__text">
+                        <span>We Are BAE fm</span>
+                        <h2>About Us</h2>
+                        <p>Enjoy watching our podcast? Consider making a donation!</p>
+                        <a href="#" class="primary-btn">Make A Donation</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="about__item">
+                        <h6>About us
+                        </h6>
+                        <p>BAE fm is an outdoor vibrant virtual online radio that was established from a township called Seshego in Polokwane, Limpopo Province. This is a Platform that grant an opportunity to the community to voice-out its challenges and achievements, being it in the Art and Entertainment industry, or any issues that affect the community on a daily basis. BAE fm empower, develop and foster skilled and unskilled young creatives who have interest in the Media industry and passionate journalists at a ground-level phase voluntary. Marketing and promoting small businesses & creative practitioner is one of its objectives that it values and embraces.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="about__item">
+                        <h6>Broadcasts
+                        </h6>
+                        <p>Our unique outdoor broadcasting methodology create a vibrant and exciting environment in the society. This mobile broadcasting strategy allows us to be able reach any society in the country in a convenient way and reassuring that every citizen in South Africa get to share his/her views. BAE fm contain very energetic and vibrant presenters who broadcast utilizing all various official South African languages. Its plays various music genres locally & internationally that are massively enjoyed by our listeners and viewers – Afro-pop, Afro-jazz, R&B, Gospel, Reggae, Kwaito, Hip Hop, Pop from the 80’s,90’s and the latest. Its programme gun to educate, aspire, inspire and entertain. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about__pic">
+                        <img src="{% static 'personal/img/about-pic.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="{% static 'personal/img/call-about-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="callto__text">
+                        <h2>“REACHING OUT TO THE COMMUNITY”</h2>
+                        <p>Enjoy Watching our podcast? Consider making a donation!</p>
+                        <a href="#" class="primary-btn">Make a Donation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Featured Guests</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="team__item">
+                        <img src="{% static 'personal/img/team/team-1.jpg' %}" alt="">
+                        <h4>Alfred Day</h4>
+                        <span>PRODUCER</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="team__item">
+                        <img src="{% static 'personal/img/team/team-2.jpg' %}" alt="">
+                        <h4>Jayden White</h4>
+                        <span>Drummer</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="team__item">
+                        <img src="{% static 'personal/img/team/team-3.jpg' %}" alt="">
+                        <h4>Vincent Reid</h4>
+                        <span>Enterpreneur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+{% endblock %} 
